@@ -1,4 +1,5 @@
 from src.jobs import read
+from src.is_valid_salary import is_valid_salary
 
 
 def get_unique_job_types(path):
@@ -80,18 +81,8 @@ def matches_salary_range(job, salary):
 
 
 def filter_by_salary_range(jobs, salary):
-    """Filters a list of jobs by salary range
-
-    Parameters
-    ----------
-    jobs : list
-        The jobs to be filtered
-    salary : int
-        The salary to be used as filter
-
-    Returns
-    -------
-    list
-        Jobs whose salary range contains `salary`
-    """
-    return []
+    ranges = []
+    for job in jobs:
+        if is_valid_salary(job, salary) and matches_salary_range(job, salary):
+            ranges.append(job)
+    return ranges
