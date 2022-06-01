@@ -23,7 +23,7 @@ def get_unique_industries(path):
 
     for job in info_jobs:
         industry = job["industry"].strip()
-        if industry not in industries and industry != '':
+        if industry not in industries and industry != "":
             industries.append(industry)
     return industries
 
