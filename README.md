@@ -58,7 +58,7 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta 
 
   - Use o comando: `git clone git@github.com:dihsantanna/project-job-insights.git`.
   - Entre na pasta do repositório que você acabou de clonar:
-    - `cd sd-014-b-project-job-insights`
+    - `cd project-job-insights`
 
   2. Crie o ambiente virtual para o projeto
 
